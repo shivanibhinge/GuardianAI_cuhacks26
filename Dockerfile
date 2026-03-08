@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 7860
 
-CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "7860"]
+CMD ["uvicorn", "agentic_api:app", "--host", "0.0.0.0", "--port", "7860"]
