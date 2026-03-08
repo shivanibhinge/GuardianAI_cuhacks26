@@ -20,6 +20,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+import os
+print("ENV KEY:", os.getenv("OPENAI_API_KEY"))
+# print("GROK KEY:", os.getenv("GROK_API_KEY"))
 
 client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
